@@ -1,0 +1,30 @@
+{
+  "cocos-analytics": {
+    "appID": "13798",
+    "appSecret": "959b3ac0037d0f3c2fdce94f8421a9b2",
+    "channel": "",
+    "enable": false,
+    "version": ""
+  },
+  "collision-matrix": [
+    [
+      true
+    ]
+  ],
+  "design-resolution-height": 760,
+  "design-resolution-width": 1280,
+  "excluded-modules": [],
+  "fit-height": true,
+  "fit-width": false,
+  "group-list": [
+    "default"
+  ],
+  "simulator-orientation": true,
+  "simulator-resolution": {
+    "height": 760,
+    "width": 1280
+  },
+  "start-scene": "bcea4f20-40de-4f62-a134-4d4dcb9cb261",
+  "use-customize-simulator": true,
+  "use-project-simulator-setting": true
+}
