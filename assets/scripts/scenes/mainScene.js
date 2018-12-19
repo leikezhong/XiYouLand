@@ -12,7 +12,7 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        armatureDisplay:dragonBones.ArmatureDisplay
+        
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -23,9 +23,8 @@ cc.Class({
 
     },
 
-    changeFunc:function (event) {
-        this._armature = this.armatureDisplay.armature();
-        this._armature.getSlot('tou').childArmature.animation.gotoAndStop("type2");
+    startBattleFunc:function (event) {
+        cc.director.loadScene("battleScene");
     },
 
     update (dt) {
