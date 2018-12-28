@@ -1,2 +1,10 @@
-1、背景
-	齐天大圣带上紧箍咒，正式开启取经之路
+equipment system:    
+	helmet
+	breastplate
+	leggings
+	scapular
+	arms
+
+
+main line system:
+	

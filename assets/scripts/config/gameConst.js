@@ -5,7 +5,8 @@ var gameConst = {
 
     ACTION:{
         IDLE:"idle",
-        RUN:"run"
+        RUN:"run",
+        RIDE:"ride",
     },
 
     DIRECT:{

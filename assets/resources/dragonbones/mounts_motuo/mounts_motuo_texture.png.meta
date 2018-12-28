@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "799dba6d-104f-4019-9d35-1ebb9b7feca8",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "mounts_motuo_texture": {
+      "ver": "1.0.3",
+      "uuid": "5d7bec44-484e-41ed-ab86-6226d0471553",
+      "rawTextureUuid": "799dba6d-104f-4019-9d35-1ebb9b7feca8",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1,
+      "offsetY": 206.5,
+      "trimX": 3,
+      "trimY": 0,
+      "width": 1020,
+      "height": 611,
+      "rawWidth": 1024,
+      "rawHeight": 1024,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

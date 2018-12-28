@@ -31,18 +31,35 @@ cc.Class({
             this.useCollisionDisplay.host = this;
         }
 
-        this.useArmatureDisplay = this.useEntity.getChildByName("dragon_display").getComponent(dragonBones.ArmatureDisplay);
-        if(this.useArmatureDisplay){
-            this.armature = this.useArmatureDisplay.armature();
-            // this.armature.getSlot('tou').childArmature.animation.gotoAndStop("type2");
+        this.charArmatureDisplay = this.useEntity.getChildByName("dragon_display").getComponent(dragonBones.ArmatureDisplay);
+        if(this.charArmatureDisplay){
+            this.charArmature = this.charArmatureDisplay.armature();
+            // this.charArmature.getSlot('tou').childArmature.animation.gotoAndStop("type2");
+            this.charArmatureDisplay.node.active = false;
         }
+
+        this.mountsArmatureDisplay = this.useEntity.getChildByName("mounts_display").getComponent(dragonBones.ArmatureDisplay);
+        if(this.mountsArmatureDisplay){
+            this.mountsHostArmature = this.charArmatureDisplay.buildArmature("sunwukong");
+            this.mountsHostArmature.animation.play(gameConst.ACTION.RIDE);
+            // this.mountsHostArmature.getSlot('tou').childArmature.animation.gotoAndStop("type2");
+            this.mountsArmature = this.mountsArmatureDisplay.armature();
+            this.mountsArmature.getSlot('yingxiong').childArmature = this.mountsHostArmature;
+        }
+
+        this.useArmature = this.mountsArmature;
+        this.useArmatureDisplay = this.mountsArmatureDisplay;
+        this.onRide = true;
     },
 
     setAction:function(action){
         if(this.nowAction != action){
             this.nowAction = action;
-            if(this.armature){
-                this.armature.animation.play(action);
+            if(this.useArmature){
+                this.useArmature.animation.play(action);
+                if(this.onRide){
+                    this.mountsHostArmature.animation.play(gameConst.ACTION.RIDE);
+                }
             }
         }
     },
